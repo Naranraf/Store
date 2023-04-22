@@ -1,9 +1,9 @@
-body{
+body {
   padding: 0;
   border: 0;
   margin: 0;
   font-family: 'Karla', sans-serif;
-  
+
 }
 
 :root {
@@ -12,20 +12,32 @@ body{
   --card-color: #ffffff;
 }
 
+.parallax {
+  background-image: url('/assets/fondo\ de\ inicio.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 360px;
+  border-radius: 0 0 50% 50%;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+
+
+
 nav {
   width: 100vw;
   font-weight: 800;
-  color: var(--secondary-color);
   display: flex;
-  background-color: var(--main-color);
+  background-color: #31af8a;
   height: 50px;
   align-items: center;
- 
+
 }
 
 h1 {
   padding: 10px;
-  color: var(--secondary-color);
+  color: white;
   font-size: 23px;
   font-family: 'Castoro Titling', cursive;
 }
@@ -37,7 +49,6 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: var(--secondary-color);
 }
 
 nav li {
@@ -46,15 +57,14 @@ nav li {
 
 nav a {
   display: block;
-  color: var(--secondary-color);
+  color: white;
   text-align: center;
   text-decoration: none;
   padding: 15px 20px;
 }
 
 nav a:hover {
-  background-color: var(--secondary-color);
-  color: white;
+  color: #353b49;
 }
 
 #cart {
@@ -70,7 +80,7 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto;
-  
+
 
 }
 
@@ -98,24 +108,29 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 80%;
- padding: 10px;
- margin: 10px;
- -webkit-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
--moz-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
+  -moz-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
+  box-shadow: 13.5px 16px 7.5px -7px #dddddd;
 }
-#main_card1, #main_card3, #main_card5{
+
+#main_card1,
+#main_card3,
+#main_card5 {
   flex-direction: row-reverse;
 }
+
 .card_content {
- width: 60%;
+  width: 60%;
   text-align: justify;
   height: 400px;
   padding: 10px;
-  font-family:'Times New Roman', Times, serif ;
+  font-family: 'Times New Roman', Times, serif;
 
 }
-.card_content div{
+
+.card_content div {
   display: flex;
   justify-content: center;
   align-items: center;
