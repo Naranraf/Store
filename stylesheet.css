@@ -25,7 +25,7 @@ body {
 
 
 nav {
-  width: 100vw;
+  width: 100%;
   font-weight: 800;
   display: flex;
   background-color: #31af8a;
@@ -43,7 +43,7 @@ h1 {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  width: 90%;
+  flex: 1;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -106,7 +106,10 @@ h2 {
   font-style: italic;
   color: var(--secondary-color);
 }
-
+#logo{
+  width:100px;
+  height: 100px;
+}
 button {
   background-color: var(--main-color);
   border: none;
@@ -116,6 +119,10 @@ button {
   color: white;
   border-radius: 10px;
   font-size: 16px;
+}
+button a{
+text-decoration: none;
+color: white;
 }
 
 .main_card {
