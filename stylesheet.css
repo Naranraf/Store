@@ -7,9 +7,8 @@ body {
 }
 
 :root {
-  --main-color: #ffffff;
-  --secondary-color: #40746b;
-  --card-color: #ffffff;
+  --main-color: #31af8a;
+  --secondary-color: #353b49;
 }
 
 .parallax {
@@ -32,7 +31,6 @@ nav {
   background-color: #31af8a;
   height: 50px;
   align-items: center;
-
 }
 
 h1 {
@@ -61,10 +59,11 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 15px 20px;
+  
 }
 
 nav a:hover {
-  color: #353b49;
+  color: var(--secondary-color);
 }
 
 #cart {
@@ -75,31 +74,48 @@ nav a:hover {
 #cart:hover {}
 
 main {
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 auto;
-
-
-}
-
-#main_container {
-  display: flex;
-  width: 100%;
-
+  width: 100vw;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 #main_cards_container {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
+img {
+  height: 400px;
+}
 
+h2 {
+  display: inline-block;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: 25px;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 .main_card {
@@ -113,7 +129,15 @@ main {
   -webkit-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
   -moz-box-shadow: 13.5px 16px 7.5px -7px #dddddd;
   box-shadow: 13.5px 16px 7.5px -7px #dddddd;
+  background-color: var(--card-color);
 }
+
+.main_card div p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+
 
 #main_card1,
 #main_card3,
@@ -145,58 +169,31 @@ main {
   float: right;
 }
 
-img {
-  height: 400px;
+.contacto {
+  display: flex;
+  height: auto;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+
 }
-
-/* #main_card1:hover {
-  background-image: url(/assets/aquarium.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#main_card2:hover {
-  background-image: url(/assets/Alimentos-para-Peces-1_opt.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#main_card3:hover {
-  background-image: url(/assets/pecera.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: black;
-}
-
-#main_card4:hover {
-  background-image: url(/assets/Servicio\ de\ consultoría\ en\ acuariofilia.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#main_card5:hover {
-  background-image: url(/assets/peces.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-h3 {
-  display: inline-block;
-  height: 30px;
+.contacto a{
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
+  text-decoration: none;
 }
 
 footer {
-  background-color: var(--main-color);
   color: var(--secondary-color);
-  text-align: center;
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
   height: 20px;
+  float: left;
 }
 
 footer p {
   margin: 0;
   line-height: 1.5;
+  font-size: large;
+  color: var(--main-color);
 }
