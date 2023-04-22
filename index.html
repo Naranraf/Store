@@ -7,11 +7,11 @@
     <title>Fishline</title>
     <link rel="stylesheet" href="/stylesheet.css">
     <script src="/main.js"></script>
-    <link rel="icon" href="/assets/fishline logo.png" type="image/png">
-
+    <link rel="icon" href="/assets/fishline_logo.png" type="image/png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Sigmar&display=swap');
     </style>
+
 </head>
 
 <body>
@@ -19,16 +19,16 @@
     <header>
         <nav>
             <h1>
-            <img src="/assets/fishline logo.png" alt="Fishline" id="logo">
+                <img src="/assets/fishline_logo.png" alt="Fishline" id="logo">
             </h1>
             <ul>
-                <li><a href="#store">Productos</a></li>
-                <li><a href="#bookMeeting">Agendar Cita</a></li>
-
-                <li><a href="#contacto">Contacto</a></li>
+                <!-- <li><a href="/store.html">Tienda</a></li> -->
+                <li><a id="bookingBtn" href="#bookingContainer">Agendar Cita</a></li>
+                <li><a href="#contacto" id="boton-modal">Contacto</a></li>
 
             </ul>
-            <div id="cart">
+
+            <!-- <div id="cart">
                 <svg width="64px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -38,20 +38,31 @@
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg>
-            </div>
+            </div> -->
         </nav>
     </header>
 
+    <div id="bookingContainer">
+        <form id="bookingForm">
+            <div id="calendarCard">
+                <label for="date">Selecciona la fecha: <br><br></label>
+                <input id="date" type="date" name="date">
+                <input id="submitBtn" type="submit" value="Enviar" form="bookingForm">
+                
+                <span id="closeBooking"><svg width="26px" height="26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Edit / Close_Circle"> <path id="Vector" d="M9 9L11.9999 11.9999M11.9999 11.9999L14.9999 14.9999M11.9999 11.9999L9 14.9999M11.9999 11.9999L14.9999 9M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#b14e4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></span>
+            </div>
+        </form>
+    </div>
+
 
     <div class="parallax">
-
     </div>
 
 
 
     <main>
-        <section id="servicios">
 
+        <section id="servicios">
 
             <div id="main_container">
 
@@ -70,12 +81,11 @@
                                     ¡Dale vida a tu hogar con nuestra ayuda!
                                 </p>
                             </div>
-                            <span>
-                                <button type="button">Contáctanos</button>
-                            </span>
-
 
                         </div>
+
+
+
                         <div>
                             <img src="/assets/aquascape-rgb.jpg" alt="">
                         </div>
@@ -96,9 +106,7 @@
                                     y satisfactoria!
                                 </p>
                             </div>
-                            <span>
-                                <button type="button"src="" >Tienda</button>
-                            </span>
+
 
                         </div>
                         <div>
@@ -120,9 +128,7 @@
                                     pequeños amigos acuáticos!
                                 </p>
                             </div>
-                            <span>
-                                <button type="button">Cotiza con nosotros</button>
-                            </span>
+
                         </div>
                         <div>
                             <img src="/assets/aquariumtank.png" alt="">
@@ -143,9 +149,7 @@
                                     cámara de calidad para obtener mayor precisión en las consultas.
                                 </p>
                             </div>
-                            <span>
-                                <button type="button">Agenda con nosotros</button>
-                            </span>
+
                         </div>
                         <div>
                             <img src="/assets/betta.png" alt="">
@@ -164,9 +168,7 @@
                                     curativos. ¡Confía en nosotros para mantener a tus amigos acuáticos sanos y felices!
                                 </p>
                             </div>
-                            <span>
-                                <button type="button">Comprar</button>
-                            </span>
+
                         </div>
                         <div>
                             <img src="/assets/hikari_alimento.webp" alt="">
@@ -184,52 +186,84 @@
         </aside>
     </main>
     <section>
-        <div class="contacto" id="contacto">
-            <div>
-                <a href="">
-                    <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
-                                fill="#31af8a"></path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="">
-                    <svg width="64px" height="64px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                        fill="none">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path stroke="#31af8a" stroke-width="12"
-                                d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z">
-                            </path>
-                            <circle cx="96" cy="96" r="30" stroke="#31af8a" stroke-width="12"></circle>
-                            <circle cx="135" cy="57" r="9" fill="#31af8a"></circle>
-                        </g>
-                    </svg>
-                </a>
-                <a href="">
-                    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#31af8a"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="#31af8a" stroke-width="2"
-                                stroke-linecap="round"></rect>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
+
+
     </section>
     <footer>
         <p>Derechos reservados 2023 - Fishline <sup>&reg;</sup></p>
     </footer>
+
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" id="boton-cerrar"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g id="Edit / Close_Circle">
+                            <path id="Vector"
+                                d="M9 9L11.9999 11.9999M11.9999 11.9999L14.9999 14.9999M11.9999 11.9999L9 14.9999M11.9999 11.9999L14.9999 9M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                                stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </svg></span>
+
+            <div class="contacto" id="contacto">
+
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=50660665028
+                    ">
+                        <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+                                    fill="#31af8a"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/rafanaranjo.01/">
+                        <svg width="64px" height="64px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
+                            fill="none">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path stroke="#31af8a" stroke-width="12"
+                                    d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z">
+                                </path>
+                                <circle cx="96" cy="96" r="30" stroke="#31af8a" stroke-width="12">
+                                </circle>
+                                <circle cx="135" cy="57" r="9" fill="#31af8a"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="mailto:rafanaranjo12345@outlook.com">
+                        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                                    stroke="#31af8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <rect x="3" y="5" width="18" height="14" rx="2" stroke="#31af8a" stroke-width="2"
+                                    stroke-linecap="round"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
 </body>
 
 </html>

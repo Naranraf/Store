@@ -3,7 +3,7 @@ body {
   border: 0;
   margin: 0;
   font-family: 'Karla', sans-serif;
-
+background-color: ;
 }
 
 :root {
@@ -18,11 +18,9 @@ body {
   background-attachment: fixed;
   height: 360px;
   border-radius: 0 0 50% 50%;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 50px;
 }
-
-
 
 nav {
   width: 100%;
@@ -66,12 +64,14 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-#cart {
+
+
+/* #cart {
   cursor: pointer;
   padding: 10px;
 }
 
-#cart:hover {}
+#cart:hover {} */
 
 main {
   height: auto;
@@ -143,8 +143,76 @@ color: white;
   font-size: 20px;
   font-style: italic;
 }
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.712);
+}
 
+.modal-contenido {
+	background-color: #fefefe;
+	margin: 20% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  height: 100px;
+	max-width: 350px;
+	text-align: center;
+	position: relative;
+  border-radius: 10px;
+}
 
+.cerrar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+#bookingContainer{
+  display: none; 
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.712);
+}
+
+#calendarCard{
+  background-color: #fefefe;
+	margin: 20% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  height: 50px;
+	max-width: 450px;
+	text-align: center;
+	position: relative;
+  border-radius: 10px;
+}
+#submitBtn{
+  border: none;
+  color: var(--main-color);
+}
+#closeBooking{
+  position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	font-size: 26px;
+	cursor: pointer;
+}
 
 #main_card1,
 #main_card3,
@@ -204,3 +272,4 @@ footer p {
   font-size: large;
   color: var(--main-color);
 }
+
