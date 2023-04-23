@@ -12,7 +12,7 @@ background-color: ;
 }
 
 .parallax {
-  background-image: url('/assets/fondo\ de\ inicio.jpg');
+  background-image: url('assets/fondo\ de\ inicio.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
