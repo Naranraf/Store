@@ -3,7 +3,6 @@ body {
   border: 0;
   margin: 0;
   font-family: 'Karla', sans-serif;
-background-color: ;
 }
 
 :root {
@@ -57,21 +56,13 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 15px 20px;
-  
+
 }
 
 nav a:hover {
   color: var(--secondary-color);
 }
 
-
-
-/* #cart {
-  cursor: pointer;
-  padding: 10px;
-}
-
-#cart:hover {} */
 
 main {
   height: auto;
@@ -106,10 +97,12 @@ h2 {
   font-style: italic;
   color: var(--secondary-color);
 }
-#logo{
-  width:100px;
+
+#logo {
+  width: 100px;
   height: 100px;
 }
+
 button {
   background-color: var(--main-color);
   border: none;
@@ -120,9 +113,10 @@ button {
   border-radius: 10px;
   font-size: 16px;
 }
-button a{
-text-decoration: none;
-color: white;
+
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 .main_card {
@@ -143,75 +137,78 @@ color: white;
   font-size: 20px;
   font-style: italic;
 }
+
 .modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.712);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.712);
 }
 
 .modal-contenido {
-	background-color: #fefefe;
-	margin: 20% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
   height: 100px;
-	max-width: 350px;
-	text-align: center;
-	position: relative;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
   border-radius: 10px;
 }
 
 .cerrar {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 10px;
-	font-size: 26px;
-	cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 26px;
+  cursor: pointer;
 }
 
-#bookingContainer{
-  display: none; 
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.712);
+#bookingContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.712);
 }
 
-#calendarCard{
+#calendarCard {
   background-color: #fefefe;
-	margin: 20% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
   height: 50px;
-	max-width: 450px;
-	text-align: center;
-	position: relative;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
   border-radius: 10px;
 }
-#submitBtn{
+
+#submitBtn {
   border: none;
   color: var(--main-color);
 }
-#closeBooking{
+
+#closeBooking {
   position: absolute;
-	top: 0;
-	right: 0;
-	padding: 10px;
-	font-size: 26px;
-	cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 #main_card1,
@@ -252,7 +249,8 @@ color: white;
   text-align: center;
 
 }
-.contacto a{
+
+.contacto a {
   padding: 10px;
   margin: 5px;
   text-decoration: none;
@@ -273,3 +271,189 @@ footer p {
   color: var(--main-color);
 }
 
+
+/* Media Query para móvil */
+@media (max-width: 576px) {
+
+  .parallax {
+    background-image: url('assets/fondo_de_inicio.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    height: auto;
+    width: 100%;
+    border-radius: 1%;
+    padding-top: 150px;
+
+  }
+
+  nav {
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  nav li {
+    margin: 0 5px;
+  }
+
+  nav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  img {
+    height: 200px;
+  }
+
+  h2 {
+    height: 20px;
+    font-size: 18px;
+  }
+
+  button {
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .main_container {
+    height: auto;
+    flex-direction: row;
+  }
+
+  
+  .main_card{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #main_card1, #main_card3,#main_card5{
+    flex-direction: column;
+  }
+  .card_content {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .card_content div {
+    height: auto;
+  }
+}
+
+/* Media Query para tableta */
+@media (min-width: 577px) and (max-width: 992px) {
+  .parallax {
+    background-image: url('assets/fondo_de_inicio.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    
+    width: 100%;
+    border-radius: 1%;
+    padding-top: 150px;
+
+  }
+
+  nav {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  nav li {
+    margin: 0 8px;
+  }
+
+  nav a {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  img {
+    height: 300px;
+  }
+
+  h2 {
+    height: 25px;
+    font-size: 20px;
+  }
+
+  button {
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .main_card {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .card_content {
+    width: 60%;
+    height: 400px;
+    font-size: 16px;
+  }
+
+  .card_content div {
+    height: 200px;
+  }
+}
+
+/* Media Query para escritorio */
+@media (min-width: 993px) {
+  .parallax {
+    height: 360px;
+  }
+
+  nav {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  img {
+    height: 400px;
+  }
+
+  h2 {
+    height: 30px;
+    font-size: 23px;
+  }
+
+  button {
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .main_card {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .card_content {
+    width: 60%;
+    height: 400px;
+    font-size: 20px;
+  }
+
+  .card_content div {
+    height: 200px;
+  }
+}
