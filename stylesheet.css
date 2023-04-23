@@ -286,7 +286,19 @@ footer p {
     padding-top: 150px;
 
   }
-
+  
+  .modal-contenido {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: auto;
+    max-width: 350px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+  }
   nav {
     height: 40px;
   }
