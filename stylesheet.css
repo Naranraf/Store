@@ -363,7 +363,7 @@ footer p {
     background-attachment: inherit;
     
     width: 100%;
-    border-radius: 1%;
+    border-radius:none;
     padding-top: 150px;
 
   }
