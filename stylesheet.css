@@ -10,16 +10,21 @@ body {
   --secondary-color: #353b49;
 }
 
+.parallax_container{
+  display: flex;
+  height: 300px;
+  width: 100vw;
+  padding-bottom:50px ;
+}
 .parallax {
   background-image: url('assets/fondo_de_inicio.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 360px;
   border-radius: 0 0 50% 50%;
   width: 100%;
-  margin-bottom: 50px;
 }
+
 
 nav {
   width: 100%;
@@ -96,6 +101,7 @@ h2 {
   margin: 10px;
   font-style: italic;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 #logo {
@@ -223,7 +229,7 @@ button a {
   height: 400px;
   padding: 10px;
   font-family: 'Times New Roman', Times, serif;
-
+  text-align: center;
 }
 
 .card_content div {
@@ -280,11 +286,7 @@ footer p {
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: inherit;
-    height: auto;
     width: 100%;
-    border-radius: 1%;
-    padding-top: 150px;
-
   }
   
   .modal-contenido {
@@ -317,10 +319,12 @@ footer p {
   }
 
   img {
-    height: 200px;
+    width: auto;
+
   }
 
   h2 {
+    text-align: center;
     height: 20px;
     font-size: 18px;
   }
@@ -347,6 +351,7 @@ footer p {
     width: 100%;
     height: auto;
     font-size: 14px;
+    text-align: center;
   }
 
   .card_content div {
@@ -361,11 +366,8 @@ footer p {
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: inherit;
-    
     width: 100%;
     border-radius:none;
-    padding-top: 150px;
-
   }
 
   nav {
@@ -390,6 +392,7 @@ footer p {
   }
 
   h2 {
+    text-align: center;
     height: 25px;
     font-size: 20px;
   }
@@ -403,17 +406,25 @@ footer p {
     width: 90%;
     margin: 10px;
     padding: 10px;
+    
   }
 
   .card_content {
     width: 60%;
-    height: 400px;
+    height: auto;
     font-size: 16px;
+    text-align: center;
+
   }
 
   .card_content div {
-    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    
   }
+  
+
 }
 
 /* Media Query para escritorio */
@@ -440,10 +451,11 @@ footer p {
   }
 
   img {
-    height: 400px;
+    width: auto;
   }
 
   h2 {
+    
     height: 30px;
     font-size: 23px;
   }
@@ -466,6 +478,6 @@ footer p {
   }
 
   .card_content div {
-    height: 200px;
+    height: auto;
   }
 }
