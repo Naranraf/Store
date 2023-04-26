@@ -283,10 +283,11 @@ footer p {
 
   .parallax {
     background-image: url('assets/fondo_de_inicio.jpg');
-    background-size: 100vw;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: inherit;
     width: 100%;
+height: auto;
+    border-radius:none;
   }
   
   .modal-contenido {
@@ -360,7 +361,7 @@ footer p {
 }
 
 /* Media Query para tableta */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 1280px) {
   .parallax {
     background-image: url('assets/fondo_de_inicio.jpg');
     background-size: 100vw;
@@ -428,7 +429,7 @@ footer p {
 }
 
 /* Media Query para escritorio */
-@media (min-width: 993px) {
+@media (min-width: 1280px) {
   .parallax {
     height: 360px;
   }
