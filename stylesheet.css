@@ -11,17 +11,11 @@ body {
 }
 
 .parallax_container{
-  display: flex;
-  height: 300px;
-  width: 100vw;
-  padding-bottom:50px ;
+ height: auto;
+ width: auto;
+
 }
-.parallax {
-  background-image: url('assets/fondo_de_inicio.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 0 0 50% 50%;
+.parallax img{
   width: 100%;
 }
 
@@ -281,12 +275,14 @@ footer p {
 /* Media Query para móvil */
 @media (max-width: 576px) {
 
-  .parallax {
-    background-image: url('assets/fondo_de_inicio.jpg');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-attachment: inherit;
+  .parallax{
     width: 100%;
+    height:auto;
+  }
+  
+  .parallax img{
+    width: 100%;
+    height: auto;
   }
   
   .modal-contenido {
@@ -353,7 +349,10 @@ footer p {
     font-size: 14px;
     text-align: center;
   }
-
+.main_card img{
+  width: 100%;
+  height: auto;
+}
   .card_content div {
     height: auto;
   }
@@ -431,6 +430,7 @@ footer p {
 @media (min-width: 993px) {
   .parallax {
     height: 360px;
+    margin-bottom: 50px;
   }
 
   nav {
