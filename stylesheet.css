@@ -17,6 +17,7 @@ body {
 }
 .parallax img{
   width: 100%;
+  border-radius:  0 0 45% 45%;
 }
 
 
@@ -283,7 +284,7 @@ footer p {
   .parallax img{
     width: 100%;
     height: auto;
-  }
+  } 
   
   .modal-contenido {
     background-color: #fefefe;
@@ -360,12 +361,9 @@ footer p {
 
 /* Media Query para tableta */
 @media (min-width: 577px) and (max-width: 1280px) {
-  .parallax {
-    background-image: url('assets/fondo_de_inicio.jpg');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-attachment: inherit;
-    width: 100%;
+  .parallax img{
+    
+    height: auto;
     border-radius:none;
   }
 
